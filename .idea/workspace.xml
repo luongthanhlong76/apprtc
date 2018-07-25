@@ -2,56 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="70148e13-7a4d-4f12-a720-fbbe1ed57f6f" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/androidTest/java/vn/vato/apprtc/ApplicationTest.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/vn/vato/apprtc/AppRTCAudioManager.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/vn/vato/apprtc/AppRTCBluetoothManager.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/vn/vato/apprtc/AppRTCClient.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/vn/vato/apprtc/AppRTCProximitySensor.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/vn/vato/apprtc/CallActivity.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/vn/vato/apprtc/CallFragment.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/vn/vato/apprtc/CaptureQualityController.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/vn/vato/apprtc/ConnectActivity.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/vn/vato/apprtc/CpuMonitor.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/vn/vato/apprtc/DirectRTCClient.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/vn/vato/apprtc/HudFragment.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/vn/vato/apprtc/PeerConnectionClient.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/vn/vato/apprtc/PercentFrameLayout.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/vn/vato/apprtc/RoomParametersFetcher.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/vn/vato/apprtc/SettingsActivity.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/vn/vato/apprtc/SettingsFragment.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/vn/vato/apprtc/TCPChannelClient.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/vn/vato/apprtc/UnhandledExceptionHandler.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/vn/vato/apprtc/WebSocketChannelClient.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/vn/vato/apprtc/WebSocketRTCClient.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/vn/vato/apprtc/util/AppRTCUtils.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/vn/vato/apprtc/util/AsyncHttpURLConnection.java" />
-      <change beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" afterPath="$PROJECT_DIR$/app/build.gradle" />
-      <change beforePath="$PROJECT_DIR$/app/proguard-rules.pro" afterPath="$PROJECT_DIR$/app/proguard-rules.pro" />
-      <change beforePath="$PROJECT_DIR$/app/src/androidTest/java/org/appspot/apprtc/ApplicationTest.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/appspot/apprtc/AppRTCAudioManager.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/appspot/apprtc/AppRTCBluetoothManager.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/appspot/apprtc/AppRTCClient.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/appspot/apprtc/AppRTCProximitySensor.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/appspot/apprtc/CallActivity.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/appspot/apprtc/CallFragment.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/appspot/apprtc/CaptureQualityController.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/appspot/apprtc/ConnectActivity.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/appspot/apprtc/CpuMonitor.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/appspot/apprtc/DirectRTCClient.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/appspot/apprtc/HudFragment.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/appspot/apprtc/PeerConnectionClient.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/appspot/apprtc/PercentFrameLayout.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/appspot/apprtc/RoomParametersFetcher.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/appspot/apprtc/SettingsActivity.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/appspot/apprtc/SettingsFragment.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/appspot/apprtc/TCPChannelClient.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/appspot/apprtc/UnhandledExceptionHandler.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/appspot/apprtc/WebSocketChannelClient.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/appspot/apprtc/WebSocketRTCClient.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/appspot/apprtc/util/AppRTCUtils.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/appspot/apprtc/util/AsyncHttpURLConnection.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.lock" afterPath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.lock" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/vato/apprtc/CallActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/vn/vato/apprtc/CallActivity.java" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -74,11 +27,65 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="CallActivity.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CallActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/vn/vato/apprtc/CallActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="73" column="30" lean-forward="false" selection-start-line="73" selection-start-column="30" selection-end-line="73" selection-end-column="30" />
+            <state relative-caret-position="720">
+              <caret line="101" column="60" lean-forward="false" selection-start-line="101" selection-start-column="60" selection-end-line="101" selection-end-column="60" />
+              <folding>
+                <element signature="e#7458#7483#0" expanded="true" />
+                <element signature="e#9424#9568#0" expanded="true" />
+                <element signature="e#9567#9568#0" expanded="true" />
+                <element signature="e#9643#9782#0" expanded="true" />
+                <element signature="e#9781#9782#0" expanded="true" />
+                <element signature="e#12649#12680#0" expanded="true" />
+                <element signature="e#12998#13029#0" expanded="true" />
+                <element signature="e#17016#17120#0" expanded="true" />
+                <element signature="e#17119#17120#0" expanded="true" />
+                <element signature="e#20601#20763#0" expanded="true" />
+                <element signature="e#20762#20763#0" expanded="true" />
+                <element signature="e#23327#23394#0" expanded="true" />
+                <element signature="e#23846#24260#0" expanded="true" />
+                <element signature="e#24259#24260#0" expanded="true" />
+                <element signature="e#26452#26489#0" expanded="true" />
+                <element signature="e#26587#26598#0" expanded="true" />
+                <element signature="e#26614#26850#0" expanded="true" />
+                <element signature="e#26849#26850#0" expanded="true" />
+                <element signature="e#27219#27402#0" expanded="true" />
+                <element signature="e#27401#27402#0" expanded="true" />
+                <element signature="e#28048#28094#0" expanded="true" />
+                <element signature="e#30698#30813#0" expanded="true" />
+                <element signature="e#30812#30813#0" expanded="true" />
+                <element signature="e#30988#31631#0" expanded="true" />
+                <element signature="e#31630#31631#0" expanded="true" />
+                <element signature="e#31736#32030#0" expanded="true" />
+                <element signature="e#32029#32030#0" expanded="true" />
+                <element signature="e#32146#32454#0" expanded="true" />
+                <element signature="e#32453#32454#0" expanded="true" />
+                <element signature="e#32525#32687#0" expanded="true" />
+                <element signature="e#32686#32687#0" expanded="true" />
+                <element signature="e#33224#33842#0" expanded="true" />
+                <element signature="e#33841#33842#0" expanded="true" />
+                <element signature="e#33941#34116#0" expanded="true" />
+                <element signature="e#34115#34116#0" expanded="true" />
+                <element signature="e#34226#34410#0" expanded="true" />
+                <element signature="e#34409#34410#0" expanded="true" />
+                <element signature="e#34552#34739#0" expanded="true" />
+                <element signature="e#34738#34739#0" expanded="true" />
+                <element signature="e#34813#34978#0" expanded="true" />
+                <element signature="e#34977#34978#0" expanded="true" />
+                <element signature="e#35143#35321#0" expanded="true" />
+                <element signature="e#35320#35321#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AppRTCClient.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/vn/vato/apprtc/AppRTCClient.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="28" column="34" lean-forward="true" selection-start-line="28" selection-start-column="34" selection-end-line="28" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -109,6 +116,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>org.appspot</find>
+      <find>org.app</find>
     </findStrings>
     <replaceStrings>
       <replace>vn.vato</replace>
@@ -2395,6 +2403,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="833" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -2411,7 +2420,7 @@
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Build" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3292683" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3292683" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3292683" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -2453,8 +2462,60 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/vn/vato/apprtc/CallActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="73" column="30" lean-forward="false" selection-start-line="73" selection-start-column="30" selection-end-line="73" selection-end-column="30" />
+        <state relative-caret-position="720">
+          <caret line="101" column="60" lean-forward="false" selection-start-line="101" selection-start-column="60" selection-end-line="101" selection-end-column="60" />
+          <folding>
+            <element signature="e#7458#7483#0" expanded="true" />
+            <element signature="e#9424#9568#0" expanded="true" />
+            <element signature="e#9567#9568#0" expanded="true" />
+            <element signature="e#9643#9782#0" expanded="true" />
+            <element signature="e#9781#9782#0" expanded="true" />
+            <element signature="e#12649#12680#0" expanded="true" />
+            <element signature="e#12998#13029#0" expanded="true" />
+            <element signature="e#17016#17120#0" expanded="true" />
+            <element signature="e#17119#17120#0" expanded="true" />
+            <element signature="e#20601#20763#0" expanded="true" />
+            <element signature="e#20762#20763#0" expanded="true" />
+            <element signature="e#23327#23394#0" expanded="true" />
+            <element signature="e#23846#24260#0" expanded="true" />
+            <element signature="e#24259#24260#0" expanded="true" />
+            <element signature="e#26452#26489#0" expanded="true" />
+            <element signature="e#26587#26598#0" expanded="true" />
+            <element signature="e#26614#26850#0" expanded="true" />
+            <element signature="e#26849#26850#0" expanded="true" />
+            <element signature="e#27219#27402#0" expanded="true" />
+            <element signature="e#27401#27402#0" expanded="true" />
+            <element signature="e#28048#28094#0" expanded="true" />
+            <element signature="e#30698#30813#0" expanded="true" />
+            <element signature="e#30812#30813#0" expanded="true" />
+            <element signature="e#30988#31631#0" expanded="true" />
+            <element signature="e#31630#31631#0" expanded="true" />
+            <element signature="e#31736#32030#0" expanded="true" />
+            <element signature="e#32029#32030#0" expanded="true" />
+            <element signature="e#32146#32454#0" expanded="true" />
+            <element signature="e#32453#32454#0" expanded="true" />
+            <element signature="e#32525#32687#0" expanded="true" />
+            <element signature="e#32686#32687#0" expanded="true" />
+            <element signature="e#33224#33842#0" expanded="true" />
+            <element signature="e#33841#33842#0" expanded="true" />
+            <element signature="e#33941#34116#0" expanded="true" />
+            <element signature="e#34115#34116#0" expanded="true" />
+            <element signature="e#34226#34410#0" expanded="true" />
+            <element signature="e#34409#34410#0" expanded="true" />
+            <element signature="e#34552#34739#0" expanded="true" />
+            <element signature="e#34738#34739#0" expanded="true" />
+            <element signature="e#34813#34978#0" expanded="true" />
+            <element signature="e#34977#34978#0" expanded="true" />
+            <element signature="e#35143#35321#0" expanded="true" />
+            <element signature="e#35320#35321#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/vn/vato/apprtc/AppRTCClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="28" column="34" lean-forward="true" selection-start-line="28" selection-start-column="34" selection-end-line="28" selection-end-column="34" />
           <folding />
         </state>
       </provider>

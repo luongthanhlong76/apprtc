@@ -75,8 +75,7 @@ public class CallActivity extends Activity implements AppRTCClient.SignalingEven
   public static final String EXTRA_VIDEO_WIDTH = "vn.vato.apprtc.VIDEO_WIDTH";
   public static final String EXTRA_VIDEO_HEIGHT = "vn.vato.apprtc.VIDEO_HEIGHT";
   public static final String EXTRA_VIDEO_FPS = "vn.vato.apprtc.VIDEO_FPS";
-  public static final String EXTRA_VIDEO_CAPTUREQUALITYSLIDER_ENABLED =
-      "org.appsopt.apprtc.VIDEO_CAPTUREQUALITYSLIDER";
+  public static final String EXTRA_VIDEO_CAPTUREQUALITYSLIDER_ENABLED = "vn.vato.apprtc.VIDEO_CAPTUREQUALITYSLIDER";
   public static final String EXTRA_VIDEO_BITRATE = "vn.vato.apprtc.VIDEO_BITRATE";
   public static final String EXTRA_VIDEOCODEC = "vn.vato.apprtc.VIDEOCODEC";
   public static final String EXTRA_HWCODEC_ENABLED = "vn.vato.apprtc.HWCODEC";
@@ -84,29 +83,23 @@ public class CallActivity extends Activity implements AppRTCClient.SignalingEven
   public static final String EXTRA_FLEXFEC_ENABLED = "vn.vato.apprtc.FLEXFEC";
   public static final String EXTRA_AUDIO_BITRATE = "vn.vato.apprtc.AUDIO_BITRATE";
   public static final String EXTRA_AUDIOCODEC = "vn.vato.apprtc.AUDIOCODEC";
-  public static final String EXTRA_NOAUDIOPROCESSING_ENABLED =
-      "vn.vato.apprtc.NOAUDIOPROCESSING";
+  public static final String EXTRA_NOAUDIOPROCESSING_ENABLED = "vn.vato.apprtc.NOAUDIOPROCESSING";
   public static final String EXTRA_AECDUMP_ENABLED = "vn.vato.apprtc.AECDUMP";
   public static final String EXTRA_OPENSLES_ENABLED = "vn.vato.apprtc.OPENSLES";
   public static final String EXTRA_DISABLE_BUILT_IN_AEC = "vn.vato.apprtc.DISABLE_BUILT_IN_AEC";
   public static final String EXTRA_DISABLE_BUILT_IN_AGC = "vn.vato.apprtc.DISABLE_BUILT_IN_AGC";
   public static final String EXTRA_DISABLE_BUILT_IN_NS = "vn.vato.apprtc.DISABLE_BUILT_IN_NS";
   public static final String EXTRA_ENABLE_LEVEL_CONTROL = "vn.vato.apprtc.ENABLE_LEVEL_CONTROL";
-  public static final String EXTRA_DISABLE_WEBRTC_AGC_AND_HPF =
-      "vn.vato.apprtc.DISABLE_WEBRTC_GAIN_CONTROL";
+  public static final String EXTRA_DISABLE_WEBRTC_AGC_AND_HPF = "vn.vato.apprtc.DISABLE_WEBRTC_GAIN_CONTROL";
   public static final String EXTRA_DISPLAY_HUD = "vn.vato.apprtc.DISPLAY_HUD";
   public static final String EXTRA_TRACING = "vn.vato.apprtc.TRACING";
   public static final String EXTRA_CMDLINE = "vn.vato.apprtc.CMDLINE";
   public static final String EXTRA_RUNTIME = "vn.vato.apprtc.RUNTIME";
   public static final String EXTRA_VIDEO_FILE_AS_CAMERA = "vn.vato.apprtc.VIDEO_FILE_AS_CAMERA";
-  public static final String EXTRA_SAVE_REMOTE_VIDEO_TO_FILE =
-      "vn.vato.apprtc.SAVE_REMOTE_VIDEO_TO_FILE";
-  public static final String EXTRA_SAVE_REMOTE_VIDEO_TO_FILE_WIDTH =
-      "vn.vato.apprtc.SAVE_REMOTE_VIDEO_TO_FILE_WIDTH";
-  public static final String EXTRA_SAVE_REMOTE_VIDEO_TO_FILE_HEIGHT =
-      "vn.vato.apprtc.SAVE_REMOTE_VIDEO_TO_FILE_HEIGHT";
-  public static final String EXTRA_USE_VALUES_FROM_INTENT =
-      "vn.vato.apprtc.USE_VALUES_FROM_INTENT";
+  public static final String EXTRA_SAVE_REMOTE_VIDEO_TO_FILE = "vn.vato.apprtc.SAVE_REMOTE_VIDEO_TO_FILE";
+  public static final String EXTRA_SAVE_REMOTE_VIDEO_TO_FILE_WIDTH = "vn.vato.apprtc.SAVE_REMOTE_VIDEO_TO_FILE_WIDTH";
+  public static final String EXTRA_SAVE_REMOTE_VIDEO_TO_FILE_HEIGHT = "vn.vato.apprtc.SAVE_REMOTE_VIDEO_TO_FILE_HEIGHT";
+  public static final String EXTRA_USE_VALUES_FROM_INTENT = "vn.vato.apprtc.USE_VALUES_FROM_INTENT";
   public static final String EXTRA_DATA_CHANNEL_ENABLED = "vn.vato.apprtc.DATA_CHANNEL_ENABLED";
   public static final String EXTRA_ORDERED = "vn.vato.apprtc.ORDERED";
   public static final String EXTRA_MAX_RETRANSMITS_MS = "vn.vato.apprtc.MAX_RETRANSMITS_MS";
