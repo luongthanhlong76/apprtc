@@ -107,6 +107,9 @@ public class CallActivity extends Activity implements AppRTCClient.SignalingEven
   public static final String EXTRA_PROTOCOL = "vn.vato.apprtc.PROTOCOL";
   public static final String EXTRA_NEGOTIATED = "vn.vato.apprtc.NEGOTIATED";
   public static final String EXTRA_ID = "vn.vato.apprtc.ID";
+  public static final int  MY_PERMISSIONS_REQUEST_RECORD_AUDIO = 1;
+  public static final int  MY_PERMISSIONS_REQUEST_CAMERA = 2;
+
 
   private static final int CAPTURE_PERMISSION_REQUEST_CODE = 1;
 
@@ -242,7 +245,7 @@ public class CallActivity extends Activity implements AppRTCClient.SignalingEven
     setSwappedFeeds(true /* isSwappedFeeds */);
 
     if (ContextCompat.checkSelfPermission(CallActivity.this, Manifest.permission.RECORD_AUDIO)
-            != PackageManager.PERMISSION_GRANTED) {
+              != PackageManager.PERMISSION_GRANTED) {
       if (ActivityCompat.shouldShowRequestPermissionRationale(CallActivity.this,
               Manifest.permission.RECORD_AUDIO)) {
         // Show an explanation to the user *asynchronously* -- don't block
@@ -252,15 +255,61 @@ public class CallActivity extends Activity implements AppRTCClient.SignalingEven
         // No explanation needed; request the permission
         ActivityCompat.requestPermissions(CallActivity.this,
                 new String[]{Manifest.permission.RECORD_AUDIO},
-                101);
+                MY_PERMISSIONS_REQUEST_RECORD_AUDIO);
         // MY_PERMISSIONS_REQUEST_READ_CONTACTS is an
         // app-defined int constant. The callback method gets the
         // result of the request.
       }
+    } else {
+      if (ContextCompat.checkSelfPermission(CallActivity.this, Manifest.permission.CAMERA)
+              != PackageManager.PERMISSION_GRANTED) {
+        if (ActivityCompat.shouldShowRequestPermissionRationale(CallActivity.this,
+                Manifest.permission.CAMERA)) {
+          // Show an explanation to the user *asynchronously* -- don't block
+          // this thread waiting for the user's response! After the user
+          // sees the explanation, try again to request the permission.
+        } else {
+          // No explanation needed; request the permission
+          ActivityCompat.requestPermissions(CallActivity.this,
+                  new String[]{Manifest.permission.CAMERA},
+                  MY_PERMISSIONS_REQUEST_CAMERA);
+          // MY_PERMISSIONS_REQUEST_READ_CONTACTS is an
+          // app-defined int constant. The callback method gets the
+          // result of the request.
+        }
+      } else {
+
+        doTask();
+      }
     }
+  }
 
+  @Override
+  public void onRequestPermissionsResult(int requestCode,
+                                         String permissions[], int[] grantResults) {
+    switch (requestCode) {
+      case MY_PERMISSIONS_REQUEST_RECORD_AUDIO:
+      case MY_PERMISSIONS_REQUEST_CAMERA:
+        {
+        // If request is cancelled, the result arrays are empty.
+        if (grantResults.length > 0
+                && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+          doTask();
+          // permission was granted, yay! Do the
+          // contacts-related task you need to do.
+        } else {
+          // permission denied, boo! Disable the
+          // functionality that depends on this permission.
+        }
+        return;
+      }
+      // other 'case' lines to check for other
+      // permissions this app might request.
+    }
+  }
 
-
+  private void doTask(){
+    final Intent intent = getIntent();
     // Check for mandatory permissions.
     for (String permission : MANDATORY_PERMISSIONS) {
       if (checkCallingOrSelfPermission(permission) != PackageManager.PERMISSION_GRANTED) {
@@ -307,25 +356,25 @@ public class CallActivity extends Activity implements AppRTCClient.SignalingEven
     PeerConnectionClient.DataChannelParameters dataChannelParameters = null;
     if (intent.getBooleanExtra(EXTRA_DATA_CHANNEL_ENABLED, false)) {
       dataChannelParameters = new PeerConnectionClient.DataChannelParameters(intent.getBooleanExtra(EXTRA_ORDERED, true),
-          intent.getIntExtra(EXTRA_MAX_RETRANSMITS_MS, -1),
-          intent.getIntExtra(EXTRA_MAX_RETRANSMITS, -1), intent.getStringExtra(EXTRA_PROTOCOL),
-          intent.getBooleanExtra(EXTRA_NEGOTIATED, false), intent.getIntExtra(EXTRA_ID, -1));
+              intent.getIntExtra(EXTRA_MAX_RETRANSMITS_MS, -1),
+              intent.getIntExtra(EXTRA_MAX_RETRANSMITS, -1), intent.getStringExtra(EXTRA_PROTOCOL),
+              intent.getBooleanExtra(EXTRA_NEGOTIATED, false), intent.getIntExtra(EXTRA_ID, -1));
     }
     peerConnectionParameters =
-        new PeerConnectionClient.PeerConnectionParameters(intent.getBooleanExtra(EXTRA_VIDEO_CALL, true), loopback,
-            tracing, videoWidth, videoHeight, intent.getIntExtra(EXTRA_VIDEO_FPS, 0),
-            intent.getIntExtra(EXTRA_VIDEO_BITRATE, 0), intent.getStringExtra(EXTRA_VIDEOCODEC),
-            intent.getBooleanExtra(EXTRA_HWCODEC_ENABLED, true),
-            intent.getBooleanExtra(EXTRA_FLEXFEC_ENABLED, false),
-            intent.getIntExtra(EXTRA_AUDIO_BITRATE, 0), intent.getStringExtra(EXTRA_AUDIOCODEC),
-            intent.getBooleanExtra(EXTRA_NOAUDIOPROCESSING_ENABLED, false),
-            intent.getBooleanExtra(EXTRA_AECDUMP_ENABLED, false),
-            intent.getBooleanExtra(EXTRA_OPENSLES_ENABLED, false),
-            intent.getBooleanExtra(EXTRA_DISABLE_BUILT_IN_AEC, false),
-            intent.getBooleanExtra(EXTRA_DISABLE_BUILT_IN_AGC, false),
-            intent.getBooleanExtra(EXTRA_DISABLE_BUILT_IN_NS, false),
-            intent.getBooleanExtra(EXTRA_ENABLE_LEVEL_CONTROL, false),
-            intent.getBooleanExtra(EXTRA_DISABLE_WEBRTC_AGC_AND_HPF, false), dataChannelParameters);
+            new PeerConnectionClient.PeerConnectionParameters(intent.getBooleanExtra(EXTRA_VIDEO_CALL, true), loopback,
+                    tracing, videoWidth, videoHeight, intent.getIntExtra(EXTRA_VIDEO_FPS, 0),
+                    intent.getIntExtra(EXTRA_VIDEO_BITRATE, 0), intent.getStringExtra(EXTRA_VIDEOCODEC),
+                    intent.getBooleanExtra(EXTRA_HWCODEC_ENABLED, true),
+                    intent.getBooleanExtra(EXTRA_FLEXFEC_ENABLED, false),
+                    intent.getIntExtra(EXTRA_AUDIO_BITRATE, 0), intent.getStringExtra(EXTRA_AUDIOCODEC),
+                    intent.getBooleanExtra(EXTRA_NOAUDIOPROCESSING_ENABLED, false),
+                    intent.getBooleanExtra(EXTRA_AECDUMP_ENABLED, false),
+                    intent.getBooleanExtra(EXTRA_OPENSLES_ENABLED, false),
+                    intent.getBooleanExtra(EXTRA_DISABLE_BUILT_IN_AEC, false),
+                    intent.getBooleanExtra(EXTRA_DISABLE_BUILT_IN_AGC, false),
+                    intent.getBooleanExtra(EXTRA_DISABLE_BUILT_IN_NS, false),
+                    intent.getBooleanExtra(EXTRA_ENABLE_LEVEL_CONTROL, false),
+                    intent.getBooleanExtra(EXTRA_DISABLE_WEBRTC_AGC_AND_HPF, false), dataChannelParameters);
     commandLineRun = intent.getBooleanExtra(EXTRA_CMDLINE, false);
     runTimeMs = intent.getIntExtra(EXTRA_RUNTIME, 0);
 
@@ -342,7 +391,7 @@ public class CallActivity extends Activity implements AppRTCClient.SignalingEven
     // Create connection parameters.
     String urlParameters = intent.getStringExtra(EXTRA_URLPARAMETERS);
     roomConnectionParameters =
-        new AppRTCClient.RoomConnectionParameters(roomUri.toString(), roomId, loopback, urlParameters);
+            new AppRTCClient.RoomConnectionParameters(roomUri.toString(), roomId, loopback, urlParameters);
 
     // Create CPU monitor
     cpuMonitor = new CpuMonitor(this);
@@ -374,7 +423,7 @@ public class CallActivity extends Activity implements AppRTCClient.SignalingEven
       peerConnectionClient.setPeerConnectionFactoryOptions(options);
     }
     peerConnectionClient.createPeerConnectionFactory(
-        getApplicationContext(), peerConnectionParameters, CallActivity.this);
+            getApplicationContext(), peerConnectionParameters, CallActivity.this);
 
     if (screencaptureEnabled && Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
       startScreenCapture();
